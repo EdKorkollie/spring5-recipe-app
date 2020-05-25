@@ -1,0 +1,6 @@
+
+
+Problem: org.hibernate.annotationexception references an unknown entity
+Solution: the class might not have @Entity attached to it
+
+How to launch h2 console: localhost:8080/h2-console
