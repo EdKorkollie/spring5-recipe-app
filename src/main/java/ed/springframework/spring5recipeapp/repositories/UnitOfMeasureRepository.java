@@ -3,5 +3,9 @@ package ed.springframework.spring5recipeapp.repositories;
 import ed.springframework.spring5recipeapp.model.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UnitOfMeasureRepositories extends CrudRepository<UnitOfMeasure, Long> {
+import java.util.Optional;
+
+public interface UnitOfMeasureRepository extends CrudRepository<UnitOfMeasure, Long> {
+
+    Optional<UnitOfMeasure> findByDescription(String description);
 }
